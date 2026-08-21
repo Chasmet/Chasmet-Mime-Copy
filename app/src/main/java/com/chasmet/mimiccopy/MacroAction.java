@@ -7,8 +7,8 @@ public class MacroAction {
     public static final String CLICK = "CLICK";
     public static final String LONG_CLICK = "LONG_CLICK";
     public static final String TEXT = "TEXT";
-    public static final String SCROLL_FORWARD = "SCROLL_FORWARD";
-    public static final String SCROLL_BACKWARD = "SCROLL_BACKWARD";
+    public static final String SWIPE_UP = "SWIPE_UP";
+    public static final String SWIPE_DOWN = "SWIPE_DOWN";
     public static final String GLOBAL_BACK = "GLOBAL_BACK";
     public static final String GLOBAL_HOME = "GLOBAL_HOME";
 

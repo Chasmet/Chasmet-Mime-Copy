@@ -12,53 +12,55 @@
         android:padding="20dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mime &amp; Copie"
-            android:textColor="@color/textPrimary"
-            android:textSize="31sp"
+            android:textColor="@color/text_primary"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Tu montres une suite d’actions. L’application la mémorise puis la rejoue."
-            android:textColor="@color/textSecondary"
-            android:textSize="16sp" />
+            android:layout_marginTop="10dp"
+            android:text="Tu montres une suite d’actions.\nL’application la mémorise puis la rejoue."
+            android:textColor="@color/text_secondary"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/card_bg"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="18dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="1 · Autoriser le moteur"
-                android:textColor="@color/textPrimary"
-                android:textSize="19sp"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtServiceStatus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:text="Service d’accessibilité : à vérifier"
-                android:textColor="@color/textSecondary"
-                android:textSize="15sp" />
+                android:layout_marginTop="10dp"
+                android:text="Service d’accessibilité : DÉSACTIVÉ"
+                android:textColor="@color/danger"
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/btnAccessibility"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="14dp"
                 android:background="@drawable/button_secondary"
                 android:text="OUVRIR LES RÉGLAGES"
-                android:textColor="@color/textPrimary"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -67,44 +69,48 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:background="@drawable/card_bg"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="18dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2 · Montrer"
-                android:textColor="@color/textPrimary"
-                android:textSize="19sp"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editRoutineName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/accent"
-                android:hint="Nom de la routine (ex. Brouillon TikTok)"
+                android:layout_marginTop="14dp"
+                android:hint="Nom de la routine"
                 android:inputType="textCapSentences"
-                android:textColor="@color/textPrimary"
-                android:textColorHint="@color/textSecondary" />
+                android:maxLines="1"
+                android:text="Cheikh"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnRecord"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="14dp"
                 android:background="@drawable/button_primary"
                 android:text="● MONTRER / ENREGISTRER"
-                android:textColor="#08100C"
+                android:textColor="@color/button_text"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="9dp"
-                android:text="Pendant l’enregistrement, une petite barre flottante permet d’enregistrer Retour/Accueil et d’arrêter."
-                android:textColor="@color/textSecondary"
-                android:textSize="13sp" />
+                android:layout_marginTop="10dp"
+                android:text="Pendant l’enregistrement, la barre flottante sert aussi pour Retour, Accueil et les défilements ↑/↓. Les animations automatiques des applis ne sont plus enregistrées."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -112,51 +118,63 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:background="@drawable/card_bg"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="18dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3 · Copier"
-                android:textColor="@color/textPrimary"
-                android:textSize="19sp"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtRoutineStatus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="10dp"
                 android:text="Aucune routine enregistrée"
-                android:textColor="@color/textSecondary"
-                android:textSize="15sp" />
+                android:textColor="@color/text_secondary"
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/btnReplay"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="14dp"
                 android:background="@drawable/button_primary"
                 android:text="▶ COPIER / REJOUER"
-                android:textColor="#08100C"
+                android:textColor="@color/button_text"
+                android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="L’application rejoue seulement les actions volontaires mémorisées. Si l’écran attendu n’est pas trouvé, elle s’arrête au lieu de cliquer au hasard."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/btnClear"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/button_secondary"
                 android:text="EFFACER LA ROUTINE"
-                android:textColor="@color/textPrimary" />
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Sécurité : les champs marqués mot de passe ne sont jamais mémorisés. L’automatisation reste locale sur le téléphone."
-            android:textColor="@color/textSecondary"
-            android:textSize="12sp" />
+            android:layout_marginBottom="24dp"
+            android:text="Sécurité : les champs mot de passe ne sont jamais enregistrés ni rejoués. Tout reste local sur le téléphone."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
     </LinearLayout>
 </ScrollView>
