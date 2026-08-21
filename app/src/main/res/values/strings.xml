@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mime &amp; Copie</string>
+    <string name="accessibility_description">Enregistre uniquement les actions déclenchées quand vous activez volontairement le mode Montrer, puis les rejoue à votre demande. Les champs mot de passe ne sont jamais enregistrés.</string>
+</resources>
